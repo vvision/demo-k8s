@@ -1,0 +1,23 @@
+{
+  "name": "demo-k8s",
+  "version": "1.0.0",
+  "description": "Some demonstrations on Kubernetes.",
+  "homepage": "https://github.com/vvision/demo-k8s#readme",
+  "bugs": {
+    "url": "https://github.com/vvision/demo-k8s/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vvision/demo-k8s.git"
+  },
+  "license": "GPLv3",
+  "author": "",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}
