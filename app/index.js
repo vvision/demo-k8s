@@ -25,7 +25,15 @@ app.get('/', (req, res) => {
           </body>
         </html>
     `);
-})
+});
+
+app.get('/health', (req, res) => {
+   res.sendStatus(200);
+});
+
+app.get('/bad-health', (req, res) => {
+    res.sendStatus(500);
+});
 
 app.listen(port, () => {
     console.log(`demo-k8s app listening on port ${port}`);
