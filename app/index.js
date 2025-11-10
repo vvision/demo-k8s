@@ -1,7 +1,7 @@
 import express from 'express';
 
 const app = express();
-const port = process.env.PORT || 3000;
+const port = process.env.PORT ? parseInt(process.env.PORT, 10) : 3000;
 const color = process.env.COLOR || 'white';
 const podName = process.env.POD_NAME || 'unknown';
 
