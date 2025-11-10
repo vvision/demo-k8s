@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: demo-app
+spec:
+  containers:
+    - name: demo-app
+      image: ghcr.io/vvision/demo-k8s:main
+      env:
+        - name: PORT
+          value: "80"
+        - name: COLOR
+          value: "red"
+        - name: POD_NAME
+          valueFrom:
+            fieldRef:
+              fieldPath: metadata.name
