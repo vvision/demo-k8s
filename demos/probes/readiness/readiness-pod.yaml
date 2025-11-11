@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: readiness-probe-app
+  labels:
+    demo: probes
+spec:
+  containers:
+    - name: demo-app
+      image: ghcr.io/vvision/demo-k8s:latest
+      readinessProbe:
+        httpGet:
+          path: /bad-health
+          port: 3000
+        initialDelaySeconds: 10
+        periodSeconds: 5
