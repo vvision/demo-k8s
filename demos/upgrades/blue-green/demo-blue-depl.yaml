@@ -1,0 +1,31 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: demo-blue
+  labels:
+    app: demo
+    color: blue
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: demo
+      color: blue
+  template:
+    metadata:
+      labels:
+        app: demo
+        color: blue
+    spec:
+      containers:
+        - name: demo-app
+          image: ghcr.io/vvision/demo-k8s:main
+          env:
+            - name: PORT
+              value: "80"
+            - name: COLOR
+              value: "blue"
+            - name: POD_NAME
+              valueFrom:
+                fieldRef:
+                  fieldPath: metadata.name
