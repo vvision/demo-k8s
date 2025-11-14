@@ -1,4 +1,4 @@
-# Upgrades demo
+# Updates demo
 
 ## Rolling Update
 
@@ -7,7 +7,7 @@
 * Check the replicaSet associated with the deployment: `kubectl get rs`.
 * Pause deployment: `kubectl rollout pause deployment/nginx-deployment`.
 * Update image: `kubectl set image deployment/nginx-deployment nginx=nginx:1.16.1`.
-* `k get deployments -owide` UP-TO-DATE est à 0.
+* `k get deployments -owide` UP-TO-DATE shows 0.
 * `k describe pod <pod_name>` to check image version.
 * Explore rollout history (no new rollout started): `kubectl rollout history deployment/nginx-deployment`.
 * Re-enable deployment rollout: `kubectl rollout resume deployment/nginx-deployment`.
@@ -22,7 +22,7 @@
 * Check the replicaSet associated with the deployment: `kubectl get rs`.
 * Pause deployment: `kubectl rollout pause deployment/nginx-deployment`.
 * Update image: `kubectl set image deployment/nginx-deployment nginx=nginx:1.16.1`.
-* `k get deployments -owide` UP-TO-DATE est à 0.
+* `k get deployments -owide` UP-TO-DATE shows 0.
 * `k describe pod <pod_name>` to check image version.
 * Explore rollout history (no new rollout started): `kubectl rollout history deployment/nginx-deployment`.
 * Re-enable deployment rollout: `kubectl rollout resume deployment/nginx-deployment`.
