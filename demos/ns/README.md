@@ -22,3 +22,5 @@ Namespace discovery.
 ## Part 2
 
 Namespaced ressources.
+
+`kubectl api-resources --namespaced=true`
