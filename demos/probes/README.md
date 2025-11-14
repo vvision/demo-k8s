@@ -18,7 +18,7 @@
   So during the first 30 seconds, the command cat /tmp/healthy returns a success code.
   After 30 seconds, cat /tmp/healthy returns a failure code.
 * Wait a little bit to see the container being restarted (execute `describe` periodically to see the events changing).
-* Execute `kubetcl get pods` to verify that `RESTART` has been incremented.
+* Execute `kubectl get pods` to verify that `RESTART` has been incremented.
 
 From: [Configure Liveness, Readiness and Startup Probes > Define a liveness command](https://kubernetes.io/docs/tasks/configure-pod-container/configure-liveness-readiness-startup-probes/#define-a-liveness-command)
 
