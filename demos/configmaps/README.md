@@ -30,4 +30,4 @@ ConfigMap to file.
 
 * Enable port forward to the pod: `kubectl port-forward pods/demo-configmap --address 0.0.0.0 8989:80`
     * VM port 8989 to Pod port 80.
-* In your browser, provider the VM also forward port 8989 to the same port on the host, open: `http://127.0.0.1:8989`
+* In your browser, provided the VM also forward port 8989 to the same port on the host, open: `http://127.0.0.1:8989`
