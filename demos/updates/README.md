@@ -18,7 +18,7 @@
 ## Recreate
 
 * Deploy the deployment: `kubectl apply -f recreate/nginx-depl.yaml`.
-* Check deployment status: ` kubectl get deployments -owide`.
+* Check deployment status: `kubectl get deployments -owide`.
 * Check the replicaSet associated with the deployment: `kubectl get rs`.
 * Pause deployment: `kubectl rollout pause deployment/nginx-deployment`.
 * Update image: `kubectl set image deployment/nginx-deployment nginx=nginx:1.16.1`.

@@ -5,7 +5,7 @@ Some demonstrations on Kubernetes.
 ## Demonstration list
 
 * [docker-image](demos/docker-image): Build a Docker image.
-* [ns](demos/ns): namespaces.
+* [ns](demos/ns): Namespaces.
 * [pods](demos/pods): Pods.
 * [env-vars](demos/env-vars): Environment variables in a pod.
 * [configmaps](demos/configmaps): ConfigMaps.

@@ -7,7 +7,7 @@ ConfigMap in env.
 
 * Create the ConfigMap with: `kubectl apply -f part1/demo-configmap.yaml`.
 * List the configMaps: `kubectl get configmaps`.
-* Display the content of the configMap: `kubectl describe demo-configmap`.
+* Display the content of the configMap: `kubectl describe configmap demo-configmap`.
 * Deploy a pod referencing the configMap demo-configmap: `kubectl apply -f part1/demo-configmap-pod.yaml`.
 * Connect into the pod to look at the env: `kubectl exec --stdin --tty demo-configmap -- /bin/sh`, followed by: `env`.
 
@@ -21,7 +21,7 @@ ConfigMap to file.
 
 * Create the ConfigMap with: `kubectl apply -f part2/demo-configmap-nginx.yaml`.
 * List the configMaps: `kubectl get configmaps`.
-* Display the content of the configMap: `kubectl describe nginx-conf`.
+* Display the content of the configMap: `kubectl describe configmap nginx-conf`.
 * Deploy a pod referencing the configMap: `kubectl apply -f part2/demo-cm-nginx-pod.yaml`.
 * Connect into the pod to look at the env: `kubectl exec --stdin --tty demo-cm-nginx -- /bin/sh`, followed by: `env`.
 
