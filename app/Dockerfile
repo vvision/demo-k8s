@@ -1,5 +1,4 @@
-# Build stage
-FROM node:25-alpine AS builder
+FROM node:25-alpine
 
 WORKDIR /app
 
@@ -8,17 +7,6 @@ COPY package*.json ./
 
 # Install dependencies
 RUN npm ci --only=production
-
-# Runtime stage
-FROM node:25-alpine AS runtime
-
-WORKDIR /app
-
-# Copy package files
-#COPY package*.json ./
-
-# Copy dependencies from builder stage
-COPY --from=builder /app/node_modules ./node_modules
 
 # Copy application source
 COPY index.js ./
