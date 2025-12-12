@@ -21,5 +21,5 @@ Some demonstrations on Kubernetes.
 
 Built to be run on a cluster with one control plane and one node.
 
-If you need a cluster, you can use [killercoda - Kubernetes Playground](https://killercoda.com/playgrounds/scenario/kubernetes) or [kubeadm-automation](vvision/kubeadm-automation).
+If you need a cluster, you can use [killercoda - Kubernetes Playground](https://killercoda.com/playgrounds/scenario/kubernetes) or [kubeadm-automation](https://github.com/vvision/kubeadm-automation).
 
